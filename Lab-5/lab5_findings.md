@@ -1,0 +1,22 @@
+﻿# Lab 5: Static Code Analysis
+
+## Objective
+Improve the security, quality, and style of the library catalog program using Pylint, Bandit, and Flake8.
+
+## Before and After Results
+- Pylint: 5.32/10 before; 10.00/10 after.
+- Bandit: 5 findings before; no issues identified after.
+- Flake8: 6 findings before; no violations after.
+
+## Issues Fixed
+1. Replaced the mutable default argument with None.
+2. Removed unsafe eval-based fine calculation.
+3. Replaced MD5 with SHA-256.
+4. Used the secrets module for temporary PIN generation.
+5. Removed shell command execution.
+6. Corrected broad exception handling.
+7. Removed unused imports and variables.
+8. Added docstrings and improved file handling and formatting.
+
+## Reflection
+Static analysis helped identify security vulnerabilities and code-quality issues without executing the source code. Fixing the findings improved readability, maintainability, and security. Running the tools again verified that the reported issues were resolved.
